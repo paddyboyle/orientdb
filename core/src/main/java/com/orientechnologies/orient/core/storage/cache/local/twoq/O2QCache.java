@@ -501,8 +501,6 @@ public final class O2QCache implements OReadCache {
       writeCache.updateDirtyPagesTable(cacheEntry.getCachePointer(), startLSN);
     }
 
-    assert cacheHit.getValue();
-
     cacheRequests.increment();
     cacheHits.increment();
 
